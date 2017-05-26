@@ -15,7 +15,7 @@ namespace PeterO.DocGen {
       builder.Append("using System.Text;\n");
       builder.Append("using " + type.Namespace + ";\n");
       builder.Append("using Microsoft.VisualStudio.TestTools.UnitTesting;\n");
-      builder.Append("namespace Test {\n");
+      builder.Append("namespace PeterO.Cbor.Tests {\n");
       builder.Append("  [TestClass]\n");
       builder.Append("  public partial class " + name + "Test {\n");
       var methods = new SortedSet<string>();
