@@ -10,34 +10,32 @@ using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
-[assembly:InternalsVisibleTo("PeterO.Cbor.Tests")]
+[assembly: InternalsVisibleTo("PeterO.Cbor.Tests")]
 
-namespace PeterO {
-  internal static class DebugUtility {
-    private static MethodInfo GetTypeMethod(
-      Type t,
-      string name,
-      Type[] parameters) {
-#if NET40
-      return t.GetMethod(name, parameters);
-#else
+namespace PeterO
 {
-        return t.GetRuntimeMethod(name, parameters);
-      }
+    internal static class DebugUtility
+    {
+        private static MethodInfo GetTypeMethod(Type t, string name, Type[] parameters)
+        {
+#if NET40
+            return t.GetMethod(name, parameters);
+#else
+            return t.GetRuntimeMethod(name, parameters);
 #endif
-    }
+        }
 
-    public static void Log(string str) {
-      Type type = Type.GetType("System.Console");
-      var types = new[] { typeof(string) };
-      GetTypeMethod(type, "WriteLine", types).Invoke(
-        type,
-        new object[] { str });
-    }
+        public static void Log(string str)
+        {
+            Type type = Type.GetType("System.Console");
+            var types = new[] { typeof(string) };
+            GetTypeMethod(type, "WriteLine", types).Invoke(type, new object[] { str });
+        }
 
-    public static void Log(string format, params object[] args) {
-      Log(String.Format(format, args));
+        public static void Log(string format, params object[] args)
+        {
+            Log(String.Format(format, args));
+        }
     }
-  }
 }
 // #endif

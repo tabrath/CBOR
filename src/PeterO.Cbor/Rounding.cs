@@ -8,53 +8,55 @@ at: http://peteroupc.github.io/
 
 using System;
 
-namespace PeterO {
+namespace PeterO
+{
     /// <include file='../docs.xml'
     /// path='docs/doc[@name="T:PeterO.Rounding"]/*'/>
-  [Obsolete("Use ERounding from PeterO.Numbers/com.upokecenter.numbers.")]
-  public enum Rounding {
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.Up"]/*'/>
-    Up,
+    [Obsolete("Use ERounding from PeterO.Numbers/com.upokecenter.numbers.")]
+    public enum Rounding
+    {
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.Up"]/*'/>
+        Up,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.Down"]/*'/>
-    Down,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.Down"]/*'/>
+        Down,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.Ceiling"]/*'/>
-    Ceiling,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.Ceiling"]/*'/>
+        Ceiling,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.Floor"]/*'/>
-    Floor,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.Floor"]/*'/>
+        Floor,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.HalfUp"]/*'/>
-    HalfUp,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.HalfUp"]/*'/>
+        HalfUp,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.HalfDown"]/*'/>
-    HalfDown,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.HalfDown"]/*'/>
+        HalfDown,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.HalfEven"]/*'/>
-    HalfEven,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.HalfEven"]/*'/>
+        HalfEven,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.Unnecessary"]/*'/>
-    Unnecessary,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.Unnecessary"]/*'/>
+        Unnecessary,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.ZeroFiveUp"]/*'/>
-    ZeroFiveUp,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.ZeroFiveUp"]/*'/>
+        ZeroFiveUp,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.Odd"]/*'/>
-    Odd,
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.Odd"]/*'/>
+        Odd,
 
-    /// <include file='../docs.xml'
-    /// path='docs/doc[@name="F:PeterO.Rounding.OddOrZeroFiveUp"]/*'/>
-    OddOrZeroFiveUp
-  }
+        /// <include file='../docs.xml'
+        /// path='docs/doc[@name="F:PeterO.Rounding.OddOrZeroFiveUp"]/*'/>
+        OddOrZeroFiveUp
+    }
 }
