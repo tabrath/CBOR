@@ -7,20 +7,24 @@ at: http://peteroupc.github.io/
  */
 using System;
 
-namespace PeterO.Cbor {
-  internal class CBORTagAny : ICBORTag
-  {
-    public CBORTypeFilter GetTypeFilter() {
-      return CBORTypeFilter.Any;
-    }
+namespace PeterO.Cbor
+{
+    internal class CBORTagAny : ICBORTag
+    {
+        public CBORTypeFilter GetTypeFilter()
+        {
+            return CBORTypeFilter.Any;
+        }
 
-    public CBORObject ValidateObject(CBORObject obj) {
-      #if DEBUG
-      if (obj == null) {
-        throw new ArgumentNullException("obj");
-      }
-      #endif
-      return obj;
+        public CBORObject ValidateObject(CBORObject obj)
+        {
+#if DEBUG
+            if (obj == null)
+            {
+                throw new ArgumentNullException("obj");
+            }
+#endif
+            return obj;
+        }
     }
-  }
 }

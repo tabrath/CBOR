@@ -7,20 +7,24 @@ at: http://peteroupc.github.io/
  */
 using System;
 
-namespace PeterO.Cbor {
+namespace PeterO.Cbor
+{
     /// <include file='../../docs.xml'
     /// path='docs/doc[@name="T:PeterO.Cbor.CBORTagGenericString"]/*'/>
-  internal class CBORTagGenericString : ICBORTag
-  {
-    public CBORTypeFilter GetTypeFilter() {
-      return CBORTypeFilter.TextString;
-    }
+    internal class CBORTagGenericString : ICBORTag
+    {
+        public CBORTypeFilter GetTypeFilter()
+        {
+            return CBORTypeFilter.TextString;
+        }
 
-    public CBORObject ValidateObject(CBORObject obj) {
-      if (obj.Type == CBORType.TextString) {
-        throw new CBORException("Not a text string");
-      }
-      return obj;
+        public CBORObject ValidateObject(CBORObject obj)
+        {
+            if (obj.Type == CBORType.TextString)
+            {
+                throw new CBORException("Not a text string");
+            }
+            return obj;
+        }
     }
-  }
 }
